@@ -46,22 +46,25 @@ function myfunc(int) {
 
 function isPrime(n) {
 
-    if (n==2) return true
+    if (n==2) return true //
     if (n%2 === 0 ) return false //karena bilangan genap gak ada yg bilangan prima
+
+    let isPrime = true
 
     for (let i=2 ; i < n ; i++){
         if (n % i == 0) {
-            return false
-        } else {
-            return true
+            isPrime = false
         }
     }
 
-
+    return isPrime
 
 }
 
-console.log(isPrime(4))
+// console.log(isPrime(2))
+// console.log(isPrime(4))
+console.log(isPrime(15))
+console.log(isPrime(17))
 
 
 
